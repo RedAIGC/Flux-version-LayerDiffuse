@@ -15,7 +15,7 @@ cd LayerDiffuse-Flux
 ```
 + download weights
 ``` shell
-
+huggingface-cli download --resume-download --local-dir ./models RedAIGC/Flux-version-LayerDiffuse 
 ```
 
 ## Flux Transparent T2I
