@@ -2,7 +2,7 @@ import torch
 import argparse
 import os
 import datetime
-from pipeline_flux_img2img import FluxImg2ImgPipeline
+from lib_layerdiffuse.pipeline_flux_img2img import FluxImg2ImgPipeline
 from lib_layerdiffuse.vae import TransparentVAE, pad_rgb
 from PIL import Image
 import numpy as np
