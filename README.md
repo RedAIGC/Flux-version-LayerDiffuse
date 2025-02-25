@@ -10,18 +10,29 @@ We train a **new transparent vae** to adapt to Flux and train a **lora** to fine
 
 + Clone this repository.
 ```shell
-git clone ...
-cd LayerDiffuse-Flux
+git clone https://github.com/RedAIGC/Flux-version-LayerDiffuse.git
+cd Flux-version-LayerDiffuse
+pip install -r requirements.txt
 ```
 + download weights
 ``` shell
 huggingface-cli download --resume-download --local-dir ./models RedAIGC/Flux-version-LayerDiffuse 
 ```
++ Make sure that you have the following directory structure.
+```
+Flux-version-LayerDiffuse/
+| - imgs
+| - lib_layerdiffuse
+| - models
+    | - layerlora.safetensors
+    | - TransparentVAE.pth
+| ...
+```
 
 ## Flux Transparent T2I
 ### demo
 ```shell
-python demo_t2i.py --ckpt_path /your/path/to/FLUX.1 dev
+python demo_t2i.py --ckpt_path /your/path/to/FLUX.1_dev --prompt /your/prompt
 ```
 ### examples
 
@@ -37,7 +48,7 @@ python demo_t2i.py --ckpt_path /your/path/to/FLUX.1 dev
 
 ## Flux Transparent I2I
 ```shell
-python demo_i2i.py --ckpt_path /your/path/to/FLUX.1 dev --image "./imgs/causal_cut.png" 
+python demo_i2i.py --ckpt_path /your/path/to/FLUX.1_dev --image "./imgs/causal_cut.png" --prompt /your/prompt
 ```
 Prompt: "a handsome man with curly hair, high quality"
 
