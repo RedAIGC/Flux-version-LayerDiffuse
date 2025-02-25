@@ -6,7 +6,7 @@ We train a **new transparent vae** to adapt to Flux and train a **lora** to fine
 
 |![](./imgs/top_examples/bottle_vis.png)|![](./imgs/top_examples/boat_vis.png)|![](./imgs/top_examples/cat_doctor_vis.png)|![](./imgs/top_examples/dragonball_vis.png)|![](./imgs/top_examples/dress_vis.png)|![](./imgs/top_examples/half_vis.png)|![](./imgs/top_examples/stickers_vis.png)|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-## Usage
+## Installation
 
 + Clone this repository.
 ```shell
