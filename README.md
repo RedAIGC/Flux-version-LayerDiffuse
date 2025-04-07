@@ -12,6 +12,9 @@ We train a **new transparent vae** to adapt to Flux and train a **lora** to fine
 ```shell
 git clone https://github.com/RedAIGC/Flux-version-LayerDiffuse.git
 cd Flux-version-LayerDiffuse
+conda create -n flux_layer python=3.10 -y
+conda activate flux_layer
+pip install torch==2.3.0 torchvision==0.18.0 --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
 ```
 + download weights
