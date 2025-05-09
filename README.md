@@ -63,6 +63,7 @@ Strength: 0.9
 
 ## Acknowledgements
 Thanks lllyasviel for their great work [LayerDiffuse](https://github.com/lllyasviel/LayerDiffuse)
+You can use style RGBA image to finetune the network to get better results.
 
 ## Contact
 If you have any questions about the code, please do not hesitate to contact us!
